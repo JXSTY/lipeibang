@@ -6,19 +6,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="./lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="./lib/font-awesome-4.5.0/css/font-awesome.min.css">
-    <link href="./css/mgr.css" rel="stylesheet"><!--[if lt IE 9]>
+    <link href="./css/mgr.css" rel="stylesheet">
+    <!--[if lt IE 9]>
     <script src="./lib/html5shiv/html5shiv.min.js"></script>
     <script src="./lib/respond/respond.min.js"></script><![endif]-->
 </head>
 <body class="mgr">
 <div>
-<!--头部-->
+    <!--头部-->
     <div class="nav navbar navbar-default main-header">
         <div class="container-fluid">
             <div class="navbar-header">
                 <a class="navbar-brand" href="#">理赔帮</a>
                 <div class="button-group pull-right">
-                    <button class="btn btn-user dropdown-toggle" type="button" data-toggle="dropdown"aria-haspopup="true" aria-expanded="false">
+                    <button class="btn btn-user dropdown-toggle" type="button" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">
                         <span data-nb-name="username" id="header-user-name">管理员</span>
                         <span class="caret"></span>
                     </button>
@@ -31,17 +33,22 @@
     </div>
     <div class="container-fluid">
         <div class="row">
-<!--左侧栏-->
+            <!--左侧栏-->
             <div class="main-left-bar">
                 <ul data-nb-name="menu" class="nav navbar-nav">
-                    <li data-id="agency" class="active"><a><i data-nb-name="icon" class="fa fa-diamond"></i><span data-nb-name="label">代理商管理</span></a></li>
-                    <li data-id="customerService"><a><i data-nb-name="icon" class="fa fa-diamond"></i><span data-nb-name="label">客服管理</span></a></li>
-                    <li data-id="question"><a><i data-nb-name="icon" class="fa fa-diamond"></i><span data-nb-name="label">题库管理</span></a></li>
-                    <li data-id="user"><a><i data-nb-name="icon" class="fa fa-diamond"></i><span data-nb-name="label">用户管理</span></a></li>
-                    <li data-id="info"><a><i data-nb-name="icon" class="fa fa-diamond"></i><span data-nb-name="label">个人中心</span></a></li>
+                    <li data-id="agency" class="active"><a><i data-nb-name="icon" class="fa fa-diamond"></i><span
+                            data-nb-name="label">代理商管理</span></a></li>
+                    <li data-id="customerService"><a><i data-nb-name="icon" class="fa fa-diamond"></i><span
+                            data-nb-name="label">客服管理</span></a></li>
+                    <li data-id="question"><a><i data-nb-name="icon" class="fa fa-diamond"></i><span
+                            data-nb-name="label">题库管理</span></a></li>
+                    <li data-id="user"><a><i data-nb-name="icon" class="fa fa-diamond"></i><span data-nb-name="label">用户管理</span></a>
+                    </li>
+                    <li data-id="info"><a><i data-nb-name="icon" class="fa fa-diamond"></i><span data-nb-name="label">个人中心</span></a>
+                    </li>
                 </ul>
             </div>
-<!--右侧面板-->
+            <!--右侧面板-->
             <div class="col-xs-12 main-right-panel">
                 <!--代理商管理-->
                 <div class="panel active">
@@ -60,12 +67,15 @@
                                 高级查询
                             </button>
 
-                            <button id="btn-item-del" data-nb-name="btnAdvanceQuery" class="btn btn-default ml10" style="width: 100px;float: right;">
+                            <button id="btn-item-del" data-nb-name="btnAdvanceQuery" class="btn btn-default ml10"
+                                    style="width: 100px;float: right;">
                                 删除
                             </button>
 
-                            <button id="btn-item-crt" data-nb-name="btnQuery" class="btn btn-default ml10" data-toggle="modal"
-                                    data-target="#myModal" style="width: 100px;float: right;background-color: #24ABE8;color: #fff; ">
+                            <button id="btn-item-crt" data-nb-name="btnQuery" class="btn btn-default ml10"
+                                    data-toggle="modal"
+                                    data-target="#myModal"
+                                    style="width: 100px;float: right;background-color: #24ABE8;color: #fff; ">
                                 新建
                             </button>
 
@@ -110,7 +120,7 @@
                             <li data-nb-name="pageNo" class="page hidden"><a href="#">5</a></li>
                             <li data-nb-name="next" class="next disabled" data-page-no="2">
                                 <a href="#" aria-label="Next">
-                                <span aria-hidden="true">»</span></a>
+                                    <span aria-hidden="true">»</span></a>
                             </li>
                         </ul>
                     </div>
@@ -182,7 +192,7 @@
                     <div class="panel-body">
                         <div class="form-inline" style="margin: 10px;">
                             <div class="form-group"><label class="ml10">关键字查询</label>
-                                <input data-nb-name="queryWord"class="form-control ml10"placeholder=""></div>
+                                <input data-nb-name="queryWord" class="form-control ml10" placeholder=""></div>
                             <button data-nb-name="btnQuery" class="btn btn-default ml10" style="width: 100px;">
                                 查询
                             </button>
@@ -282,18 +292,50 @@
                     &times;
                 </button>
                 <h4 class="modal-title" id="myModalLabel">
-                    模态框（Modal）标题
+                    添加代理商
                 </h4>
             </div>
             <div class="modal-body">
-                在这里添加一些文本
+
+                <form class="form-horizontal" role="form">
+                    <div class="form-group">
+                        <label for="company-name" class="col-sm-2 control-label">公司名称</label>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control" id="company-name" placeholder="填写公司名称">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="company-man-name" class="col-sm-2 control-label">联系人</label>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control" id="company-man-name" placeholder="填写公司联系人姓名">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="company-man-tel" class="col-sm-2 control-label">联系方式</label>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control" id="company-man-tel" placeholder="填写公司联系人手机号">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="query-area" class="col-sm-2 control-label">地区</label>
+                        <div class="col-sm-10">
+                            <select class="form-control" id="query-area" placeholder="填写公司联系人手机号">
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5</option>
+                            </select>
+                        </div>
+                    </div>
+                </form>
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-default"
-                        data-dismiss="modal">关闭
+                        data-dismiss="modal">取消
                 </button>
                 <button type="button" class="btn btn-primary">
-                    提交更改
+                    提交审核
                 </button>
             </div>
         </div><!-- /.modal-content -->
