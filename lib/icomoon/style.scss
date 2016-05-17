@@ -1,0 +1,224 @@
+@import "variables";
+
+@font-face {
+    font-family: 'movie';
+    src:    url('#{$icomoon-font-path}/movie.eot?c4kgzs');
+    src:    url('#{$icomoon-font-path}/movie.eot?c4kgzs#iefix') format('embedded-opentype'),
+        url('#{$icomoon-font-path}/movie.ttf?c4kgzs') format('truetype'),
+        url('#{$icomoon-font-path}/movie.woff?c4kgzs') format('woff'),
+        url('#{$icomoon-font-path}/movie.svg?c4kgzs#movie') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.fi {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'movie' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.fi-txpc {
+    &:before {
+        content: $fi-txpc;
+    }
+}
+.fi-sfs_erwei {
+    &:before {
+        content: $fi-sfs_erwei;
+    }
+}
+.fi-sfs_zoom1 {
+    &:before {
+        content: $fi-sfs_zoom1;
+    }
+}
+.fi-sfs_zoom2 {
+    &:before {
+        content: $fi-sfs_zoom2;
+    }
+}
+.fi-sfs_car {
+    &:before {
+        content: $fi-sfs_car;
+    }
+}
+.fi-seat-f {
+    &:before {
+        content: $fi-seat-f;
+    }
+}
+.fi-seat-l-f {
+    &:before {
+        content: $fi-seat-l-f;
+    }
+}
+.fi-seat-r-f {
+    &:before {
+        content: $fi-seat-r-f;
+    }
+}
+.fi-seat-r {
+    &:before {
+        content: $fi-seat-r;
+    }
+}
+.fi-seat {
+    &:before {
+        content: $fi-seat;
+    }
+}
+.fi-seat-l {
+    &:before {
+        content: $fi-seat-l;
+    }
+}
+.fi-fenxiang {
+    &:before {
+        content: $fi-fenxiang;
+    }
+}
+.fi-shoucang {
+    &:before {
+        content: $fi-shoucang;
+    }
+}
+.fi-shoucang2 {
+    &:before {
+        content: $fi-shoucang2;
+    }
+}
+.fi-loading1 {
+    &:before {
+        content: $fi-loading1;
+    }
+}
+.fi-loading2 {
+    &:before {
+        content: $fi-loading2;
+    }
+}
+.fi-ertong {
+    &:before {
+        content: $fi-ertong;
+    }
+}
+.fi-tingche {
+    &:before {
+        content: $fi-tingche;
+    }
+}
+.fi-yanjing {
+    &:before {
+        content: $fi-yanjing;
+    }
+}
+.fi-qinglv {
+    &:before {
+        content: $fi-qinglv;
+    }
+}
+.fi-xingyongka {
+    &:before {
+        content: $fi-xingyongka;
+    }
+}
+.fi-xiuxi {
+    &:before {
+        content: $fi-xiuxi;
+    }
+}
+.fi-down {
+    &:before {
+        content: $fi-down;
+    }
+}
+.fi-right {
+    &:before {
+        content: $fi-right;
+    }
+}
+.fi-up {
+    &:before {
+        content: $fi-up;
+    }
+}
+.fi-yingpian {
+    &:before {
+        content: $fi-yingpian;
+    }
+}
+.fi-yingyuan {
+    &:before {
+        content: $fi-yingyuan;
+    }
+}
+.fi-wode {
+    &:before {
+        content: $fi-wode;
+    }
+}
+.fi-star {
+    &:before {
+        content: $fi-star;
+    }
+}
+.fi-addr {
+    &:before {
+        content: $fi-addr;
+    }
+}
+.fi-pho {
+    &:before {
+        content: $fi-pho;
+    }
+}
+.fi-time {
+    &:before {
+        content: $fi-time;
+    }
+}
+.fi-piao {
+    &:before {
+        content: $fi-piao;
+    }
+}
+.fi-order {
+    &:before {
+        content: $fi-order;
+    }
+}
+.fi-youhui {
+    &:before {
+        content: $fi-youhui;
+    }
+}
+.fi-xiangkan {
+    &:before {
+        content: $fi-xiangkan;
+    }
+}
+.fi-shezhi {
+    &:before {
+        content: $fi-shezhi;
+    }
+}
+.fi-piao-2 {
+    &:before {
+        content: $fi-piao-2;
+    }
+}
+.fi-left {
+    &:before {
+        content: $fi-left;
+    }
+}
+

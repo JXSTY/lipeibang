@@ -1,0 +1,144 @@
+@font-face {
+    font-family: 'movie';
+    src:    url('fonts/movie.eot?c4kgzs');
+    src:    url('fonts/movie.eot?c4kgzs#iefix') format('embedded-opentype'),
+        url('fonts/movie.ttf?c4kgzs') format('truetype'),
+        url('fonts/movie.woff?c4kgzs') format('woff'),
+        url('fonts/movie.svg?c4kgzs#movie') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.fi {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'movie' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.fi-txpc:before {
+    content: "\e900";
+}
+.fi-sfs_erwei:before {
+    content: "\e802";
+}
+.fi-sfs_zoom1:before {
+    content: "\e800";
+}
+.fi-sfs_zoom2:before {
+    content: "\e801";
+}
+.fi-sfs_car:before {
+    content: "\e622";
+}
+.fi-seat-f:before {
+    content: "\e61c";
+}
+.fi-seat-l-f:before {
+    content: "\e61d";
+}
+.fi-seat-r-f:before {
+    content: "\e61e";
+}
+.fi-seat-r:before {
+    content: "\e61f";
+}
+.fi-seat:before {
+    content: "\e620";
+}
+.fi-seat-l:before {
+    content: "\e621";
+}
+.fi-fenxiang:before {
+    content: "\e619";
+}
+.fi-shoucang:before {
+    content: "\e61a";
+}
+.fi-shoucang2:before {
+    content: "\e61b";
+}
+.fi-loading1:before {
+    content: "\e617";
+}
+.fi-loading2:before {
+    content: "\e618";
+}
+.fi-ertong:before {
+    content: "\e611";
+}
+.fi-tingche:before {
+    content: "\e612";
+}
+.fi-yanjing:before {
+    content: "\e613";
+}
+.fi-qinglv:before {
+    content: "\e614";
+}
+.fi-xingyongka:before {
+    content: "\e615";
+}
+.fi-xiuxi:before {
+    content: "\e616";
+}
+.fi-down:before {
+    content: "\e600";
+}
+.fi-right:before {
+    content: "\e602";
+}
+.fi-up:before {
+    content: "\e603";
+}
+.fi-yingpian:before {
+    content: "\e604";
+}
+.fi-yingyuan:before {
+    content: "\e605";
+}
+.fi-wode:before {
+    content: "\e606";
+}
+.fi-star:before {
+    content: "\e607";
+}
+.fi-addr:before {
+    content: "\e608";
+}
+.fi-pho:before {
+    content: "\e609";
+}
+.fi-time:before {
+    content: "\e60a";
+}
+.fi-piao:before {
+    content: "\e60b";
+}
+.fi-order:before {
+    content: "\e60c";
+}
+.fi-youhui:before {
+    content: "\e60d";
+}
+.fi-xiangkan:before {
+    content: "\e60e";
+}
+.fi-shezhi:before {
+    content: "\e60f";
+}
+.fi-piao-2:before {
+    content: "\e610";
+}
+.fi-left:before {
+    content: "\e601";
+}
+

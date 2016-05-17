@@ -1,0 +1,264 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="./lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./lib/font-awesome-4.5.0/css/font-awesome.min.css">
+    <link href="./css/mgr.css" rel="stylesheet"><!--[if lt IE 9]>
+    <script src="./lib/html5shiv/html5shiv.min.js"></script>
+    <script src="./lib/respond/respond.min.js"></script><![endif]-->
+</head>
+<body class="mgr">
+<div>
+    <div class="nav navbar navbar-default main-header">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#">理赔帮</a>
+                <div class="button-group pull-right">
+                    <button class="btn btn-user dropdown-toggle" type="button" data-toggle="dropdown"aria-haspopup="true" aria-expanded="false">
+                        <span data-nb-name="username" id="header-user-name">管理员</span>
+                        <span class="caret"></span>
+                    </button>
+                    <div class="dropdown-menu">
+                        <li><a data-nb-name="action" href="#" data-cmd="logout">退出</a></li>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="main-left-bar">
+                <ul data-nb-name="menu" class="nav navbar-nav">
+                    <li data-id="agency" class="active"><a><i data-nb-name="icon" class="fa fa-diamond"></i><span data-nb-name="label">代理商管理</span></a></li>
+                    <li data-id="customerService"><a><i data-nb-name="icon" class="fa fa-diamond"></i><span data-nb-name="label">客服管理</span></a></li>
+                    <li data-id="question"><a><i data-nb-name="icon" class="fa fa-diamond"></i><span data-nb-name="label">题库管理</span></a></li>
+                    <li data-id="user"><a><i data-nb-name="icon" class="fa fa-diamond"></i><span data-nb-name="label">用户管理</span></a></li>
+                    <li data-id="info"><a><i data-nb-name="icon" class="fa fa-diamond"></i><span data-nb-name="label">个人中心</span></a></li>
+                </ul>
+            </div>
+            <div class="col-xs-12 main-right-panel">
+                <div class="panel active">
+                    <div class="panel-header"><h4>代理商管理</h4></div>
+                    <div class="panel-body">
+                        <div class="form-inline" style="margin: 10px;">
+                            <div class="form-group"><label class="ml10">关键字查询</label>
+                                <input data-nb-name="queryWord" class="form-control ml10" placeholder="联系人/联系方式/地区">
+                            </div>
+                            <button data-nb-name="btnQuery" class="btn btn-default ml10" style="width: 100px;">
+                                查询
+                            </button>
+                            <button data-nb-name="btnAdvanceQuery" class="btn btn-default ml10" style="width: 100px;">
+                                高级查询
+                            </button>
+                        </div>
+                        <table class="table">
+                            <thead data-nb-name="thead">
+                            <tr data-nb-name="headRow">
+                                <th><input type="checkbox"></th>
+                                <th>联系人</th>
+                                <th>等级</th>
+                                <th>联系方式</th>
+                                <th>身份证</th>
+                                <th>地区</th>
+                            </tr>
+                            </thead>
+                            <tbody data-nb-name="tbody">
+                            <tr>
+                                <td><input type="checkbox" data-id="2"></td>
+                                <td>138****8611</td>
+                                <td>1</td>
+                                <td>13816378611</td>
+                                <td>null</td>
+                                <td>null</td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox" data-id="6"></td>
+                                <td>139****6031</td>
+                                <td>1</td>
+                                <td>13917526031</td>
+                                <td>null</td>
+                                <td>null</td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox" data-id="7"></td>
+                                <td>186****5991</td>
+                                <td>1</td>
+                                <td>18621805991</td>
+                                <td>null</td>
+                                <td>null</td>
+                            </tr>
+                            </tbody>
+                        </table>
+                        <ul class="pagination">
+                            <li data-nb-name="prev" class="prev disabled" data-page-no="0">
+                                <a href="#" aria-label="Previous">
+                                    <span aria-hidden="true">«</span>
+                                </a>
+                            </li>
+                            <li data-nb-name="pageNo" class="page active" data-page-no="1"><a href="#">1</a></li>
+                            <li data-nb-name="pageNo" class="page hidden"><a href="#">2</a></li>
+                            <li data-nb-name="pageNo" class="page hidden"><a href="#">3</a></li>
+                            <li data-nb-name="pageNo" class="page hidden"><a href="#">4</a></li>
+                            <li data-nb-name="pageNo" class="page hidden"><a href="#">5</a></li>
+                            <li data-nb-name="next" class="next disabled" data-page-no="2">
+                                <a href="#" aria-label="Next">
+                                <span aria-hidden="true">»</span></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="panel">
+                    <div class="panel-header"><h4>客服管理</h4></div>
+                    <div class="panel-body">
+                        <ul data-nb-name="tabs" class="nav nav-tabs">
+                            <li class="active"><a data-id="query" href="#" data-toggle="tab">问题检索</a></li>
+                            <li role="presentation"><a href="#" data-toggle="tab" data-id="enter">问题录入</a></li>
+                        </ul>
+                        <div class="tab-content">
+                            <div data-nb-name="query" class="tab-pane active">
+                                <div class="form-inline" style="margin: 10px;">
+                                    <div class="form-group"><label class="ml10">关键字查询</label><input
+                                            data-nb-name="queryWord" class="form-control ml10" placeholder=""></div>
+                                    <button data-nb-name="btnQuery" class="btn btn-default ml10" style="width: 100px;">
+                                        查询
+                                    </button>
+                                    <button data-nb-name="btnAdvanceQuery" class="btn btn-default ml10"
+                                            style="width: 100px;">高级查询
+                                    </button>
+                                </div>
+                                <table class="table">
+                                    <thead data-nb-name="thead">
+                                    <tr data-nb-name="headRow"></tr>
+                                    </thead>
+                                    <tbody data-nb-name="tbody"></tbody>
+                                </table>
+                                <ul class="pagination">
+                                    <li data-nb-name="prev" class="prev"><a href="#" aria-label="Previous"><span
+                                            aria-hidden="true">«</span></a></li>
+                                    <li data-nb-name="pageNo" class="page"><a href="#">1</a></li>
+                                    <li data-nb-name="pageNo" class="page"><a href="#">2</a></li>
+                                    <li data-nb-name="pageNo" class="page"><a href="#">3</a></li>
+                                    <li data-nb-name="pageNo" class="page"><a href="#">4</a></li>
+                                    <li data-nb-name="pageNo" class="page"><a href="#">5</a></li>
+                                    <li data-nb-name="next" class="next"><a href="#" aria-label="Next"><span
+                                            aria-hidden="true">»</span></a></li>
+                                </ul>
+                            </div>
+                            <div data-nb-name="enter" class="tab-pane"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel">
+                    <div class="panel-header"><h4>题库管理</h4></div>
+                    <div class="panel-body">
+                        <div class="form-inline" style="margin: 10px;">
+                            <div class="form-group"><label class="ml10">关键字查询</label><input data-nb-name="queryWord"
+                                                                                            class="form-control ml10"
+                                                                                            placeholder="联系人/联系方式/地区">
+                            </div>
+                            <button data-nb-name="btnQuery" class="btn btn-default ml10" style="width: 100px;">查询
+                            </button>
+                            <button data-nb-name="btnAdvanceQuery" class="btn btn-default ml10" style="width: 100px;">
+                                高级查询
+                            </button>
+                        </div>
+                        <div data-nb-name="table"></div>
+                        <div data-nb-name="pagination"></div>
+                    </div>
+                </div>
+                <div class="panel">
+                    <div class="panel-header"><h4>用户管理</h4></div>
+                    <div class="panel-body">
+                        <div class="form-inline" style="margin: 10px;">
+                            <div class="form-group"><label class="ml10">关键字查询</label><input data-nb-name="queryWord"
+                                                                                            class="form-control ml10"
+                                                                                            placeholder=""></div>
+                            <button data-nb-name="btnQuery" class="btn btn-default ml10" style="width: 100px;">查询
+                            </button>
+                            <button data-nb-name="btnAdvanceQuery" class="btn btn-default ml10" style="width: 100px;">
+                                高级查询
+                            </button>
+                        </div>
+                        <table class="table">
+                            <thead data-nb-name="thead">
+                            <tr data-nb-name="headRow">
+                                <th>用户名称</th>
+                                <th>身份证号码</th>
+                                <th>手机号码</th>
+                                <th>登录名</th>
+                            </tr>
+                            </thead>
+                            <tbody data-nb-name="tbody"></tbody>
+                        </table>
+                        <ul class="pagination">
+                            <li data-nb-name="prev" class="prev"><a href="#" aria-label="Previous"><span
+                                    aria-hidden="true">«</span></a></li>
+                            <li data-nb-name="pageNo" class="page"><a href="#">1</a></li>
+                            <li data-nb-name="pageNo" class="page"><a href="#">2</a></li>
+                            <li data-nb-name="pageNo" class="page"><a href="#">3</a></li>
+                            <li data-nb-name="pageNo" class="page"><a href="#">4</a></li>
+                            <li data-nb-name="pageNo" class="page"><a href="#">5</a></li>
+                            <li data-nb-name="next" class="next"><a href="#" aria-label="Next"><span aria-hidden="true">»</span></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="panel">
+                    <div class="panel-header"><h4>信息管理</h4></div>
+                    <div class="panel-body">
+                        <div data-nb-name="qrCodeList" class="row">
+                            <div class="qr-item col-xs-6"><img data-nb-name="img"
+                                                               src="http://qr-code.oss-cn-shanghai.aliyuncs.com/u_1.png">
+                                <div data-nb-name="label">用户办理二维码</div>
+                            </div>
+                            <div class="qr-item col-xs-6"><img data-nb-name="img"
+                                                               src="http://qr-code.oss-cn-shanghai.aliyuncs.com/a_1.png">
+                                <div data-nb-name="label">加盟二维码</div>
+                            </div>
+                        </div>
+                    </div>
+                    <table class="table">
+                        <thead data-nb-name="thead">
+                        <tr data-nb-name="headRow">
+                            <th><input type="checkbox"></th>
+                            <th>用户名称</th>
+                            <th>身份证</th>
+                            <th>联系方式</th>
+                            <th>登录名</th>
+                        </tr>
+                        </thead>
+                        <tbody data-nb-name="tbody">
+                        <tr>
+                            <td><input type="checkbox" data-id="1"></td>
+                            <td>管理员</td>
+                            <td>null</td>
+                            <td>null</td>
+                            <td>admin</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                    <ul class="pagination">
+                        <li data-nb-name="prev" class="prev disabled" data-page-no="0"><a href="#"
+                                                                                          aria-label="Previous"><span
+                                aria-hidden="true">«</span></a></li>
+                        <li data-nb-name="pageNo" class="page active" data-page-no="1"><a href="#">1</a></li>
+                        <li data-nb-name="pageNo" class="page hidden"><a href="#">2</a></li>
+                        <li data-nb-name="pageNo" class="page hidden"><a href="#">3</a></li>
+                        <li data-nb-name="pageNo" class="page hidden"><a href="#">4</a></li>
+                        <li data-nb-name="pageNo" class="page hidden"><a href="#">5</a></li>
+                        <li data-nb-name="next" class="next disabled" data-page-no="2"><a href="#"
+                                                                                          aria-label="Next"><span
+                                aria-hidden="true">»</span></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="./lib/jquery/jquery-1.11.3.min.js"></script>
+<script src="./lib/bootstrap/js/bootstrap.min.js"></script>
+</body>
+</html>
